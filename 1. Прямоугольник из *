@@ -1,0 +1,4 @@
+s = int(input("Введи ширину"))
+d = int(input("Введи длину"))
+for i in range (d):
+    print ("*" * s)
