@@ -1,0 +1,28 @@
+even = []
+odd = []
+
+while True:   #проверка ввода
+    n = int(input())
+    if n == 0:
+        break
+    elif n % 2 == 0:
+        even.append(n)
+    else:
+        odd.append(n)
+
+nev = len(even)
+nod = len(odd)
+ie = io = 0
+
+while True:
+    if ie >= nev:
+        for i in range(io, nod):
+            print(odd[i])
+        break
+    elif io >= nod:
+        for i in range(ie, nev):
+            print(even[i])
+        break
+    print(even[ie], odd[io])
+    ie += 1
+    io += 1
