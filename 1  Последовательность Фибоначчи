@@ -10,5 +10,5 @@ for ii in range(n, n+15): # цикл для 15 элементов
         f2 = f_sum
         i = i + 1
 
-        if f2 >= n:
+        if f2 >= n: #условие для отбора 15 шт
             print(f2)
