@@ -15,10 +15,10 @@ class Sequence:
 
 
 class DNA(Sequence):
-    name = 'DNA'
+    name = 'dna'
     alphabet = ['A', 'G', 'C', 'T']
 
-    def __init__(self, seq):
+    def __init__(self, name, seq):
         super().__init__(Sequence, seq)
 
     def statistic(self):
@@ -56,7 +56,7 @@ class RNA(Sequence):
     name = 'rna'
     alphabet = ['A', 'C', 'G', 'U']
 
-    def __init__(self, seq, ):
+    def __init__(self, name, seq):
         super().__init__(Sequence, seq)
 
     def statistic(self):
@@ -91,7 +91,7 @@ class Protein(Sequence):
     name = 'Protein'
     alphabet = ['A', 'R', 'N', 'D', 'V', 'H', 'G', 'Q', 'E', 'I', 'L', 'K', 'M', 'P', 'S', 'Y', 'T', 'W', 'F', 'C']
 
-    def __init__(self, seq):
+    def __init__(self, name, seq):
         super().__init__(Sequence, seq)
 
     def statistic(self):
