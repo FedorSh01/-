@@ -1,0 +1,16 @@
+import string
+def big (vvod, iz = string.ascii_lowercase, v = string.ascii_uppercase):
+    str =''
+    lenvvod = len(vvod)
+    for i in range(lenvvod):
+        if vvod[i] in iz:
+            str += vvod[i].swapcase()
+        else:
+            str += vvod[i]
+    return str
+
+def smoll (vvod):
+    return big(vvod, string.ascii_uppercase, string.ascii_lowercase)
+
+def inversion (vvod):
+    return big(vvod, string.ascii_letters)
